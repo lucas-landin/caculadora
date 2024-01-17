@@ -26,14 +26,22 @@ router.post('/calculate-baskara', (req, res)=> {
 
     if(a === 0 || delta < 0){
         return res.send("<h3>This equation does not have real roots<h3/>")
-    }else{
+    }
+
+    else{
         const x1 = ((-b + Math.sqrt(delta)) / ( 2 * a)).toFixed(4)
         const x2 = ((-b - Math.sqrt(delta)) / (2 * a)).toFixed(4)
 
         
         res.setHeader('Content-Type', 'text/html');
-        res.send(`The roots are:  ${x1}  and   ${x2}`);
-    }
+        res.send(`
+        <h3>Coeficiente A :  ${a}<br/><h3/>
+        <h3>Coeficiente B :  ${b}<br/><h3/> 
+        <h3>Coeficiente C :  ${c}<br/><h3/>   
+        X1 = ${x1}  <br/>  
+        X2 = ${x2}
+        
+    `);}
 })
 
 module.exports = router;

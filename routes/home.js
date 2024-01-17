@@ -7,7 +7,7 @@ router.get('/', (req, res) => {
         <h1>Welcome</h1>
         <ul>
             <li><a href="/calculator">Go to Grade Calculator</a></li>
-            <li><a href="/baskara">Go to Baskara</a></li>
+            <li><a href="/baskara">Go to Baskara Calculator</a></li>
         </ul>
     `);
 });
