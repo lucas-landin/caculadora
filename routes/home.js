@@ -6,7 +6,8 @@ router.get('/', (req, res) => {
     res.send(`
         <h1>Welcome</h1>
         <ul>
-            <li><a href="/calculator">Go to Calculator</a></li>
+            <li><a href="/calculator">Go to Grade Calculator</a></li>
+            <li><a href="/baskara">Go to Baskara</a></li>
         </ul>
     `);
 });
